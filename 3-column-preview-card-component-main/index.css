@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --col1: hsl(31, 77%, 52%);
+    --col2: hsl(184, 100%, 22%);
+    --col3: hsl(179, 100%, 13%);
+    --para: hsla(0, 0%, 100%, 0.75);
+    --bg_h_button: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg_h_button);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 85rem;
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.column1 {
+    background-color: var(--col1);
+}
+
+.column2 {
+    background-color: var(--col2);
+}
+
+.column3 {
+    background-color: var(--col3);
+}
+
+.logo {
+    padding: 4rem;
+}
+
+.heading {
+    color: var(--bg_h_button);
+    font-size: 4rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    padding: 0 0 4rem 4rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    color: var(--para);
+    padding: 0 4rem 0 4rem;
+    margin-bottom: 8rem;
+    line-height: 2.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    margin: 0 0 5rem 4rem;
+    background-color: var(--bg_h_button);
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+.button1 {
+    color: var(--col1);
+}
+
+.button2 {
+    color: var(--col2);
+}
+
+.button3 {
+    color: var(--col3);
+}
+
+.button:hover {
+    color: var(--para);
+    border: 1px solid var(--para);
+}
+
+.button1:hover {
+    background-color: var(--col1);
+}
+
+.button2:hover {
+    background-color: var(--col2);
+}
+
+.button3:hover {
+    background-color: var(--col3);
+}
+
+@media screen and (max-width:565px) {
+    body {
+        margin: 2rem;
+        height: auto;
+    }
+    
+    .container {
+        display: block;
+    }
+
+    .paragraph {
+        margin-bottom: 2rem;
+    }
+}
